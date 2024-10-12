@@ -1,22 +1,27 @@
 {
-  "name": "react-boilerplate",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "@types/react": "^18.3.10",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react-swc": "^3.5.0",
-    "typescript": "^5.5.3",
-    "vite": "^5.4.8"
-  }
+	"name": "react-boilerplate",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"preview": "vite preview",
+		"lint:check": "biome lint ./src",
+		"lint": "biome lint --write ./src",
+		"format:check": "biome format ./src",
+		"format": "biome format --write ./src"
+	},
+	"dependencies": {
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.3",
+		"@types/react": "^18.3.10",
+		"@types/react-dom": "^18.3.0",
+		"@vitejs/plugin-react-swc": "^3.5.0",
+		"typescript": "^5.5.3",
+		"vite": "^5.4.8"
+	}
 }
