@@ -41,10 +41,12 @@
 		"date-fns": "^4.1.0",
 		"embla-carousel-react": "^8.3.0",
 		"input-otp": "^1.2.4",
+		"lucide-react": "^0.452.0",
 		"react": "^18.3.1",
 		"react-day-picker": "8.10.1",
 		"react-dom": "^18.3.1",
 		"react-hook-form": "^7.53.0",
+		"recharts": "^2.13.0",
 		"tailwind-merge": "^2.5.3",
 		"tailwindcss-animate": "^1.0.7",
 		"zod": "^3.23.8"
