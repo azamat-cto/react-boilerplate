@@ -1,9 +1,9 @@
-import Login from "@/pages/auth/login";
+import { Outlet } from "react-router-dom";
 
 function AuthLayout() {
 	return (
 		<div className="h-svh">
-			<Login />
+			<Outlet />
 		</div>
 	);
 }
