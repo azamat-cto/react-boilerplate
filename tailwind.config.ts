@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import tailwindAnimate from "tailwindcss-animate";
+import { fontFamily } from "tailwindcss/defaultTheme";
 
 export default {
 	darkMode: ["class"],
@@ -52,6 +53,10 @@ export default {
 					"4": "hsl(var(--chart-4))",
 					"5": "hsl(var(--chart-5))",
 				},
+			},
+			fontFamily: {
+				sans: ["var(--font-roboto)", ...fontFamily.sans],
+				mono: ["var(--font-roboto-mono)", ...fontFamily.mono],
 			},
 			keyframes: {
 				"accordion-down": {
