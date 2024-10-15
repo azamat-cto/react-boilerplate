@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { PasswordInput } from "@/components/password-input";
 
 const formSchema = z.object({
 	username: z.string().min(2, {
@@ -19,7 +20,7 @@ const formSchema = z.object({
 	}),
 	password: z
 		.string()
-		.min(2, { message: "Password must be at least 6 characters." }),
+		.min(6, { message: "Password must be at least 6 characters." }),
 });
 
 function Login() {
@@ -69,7 +70,7 @@ function Login() {
 									<FormItem>
 										<FormLabel>Password</FormLabel>
 										<FormControl>
-											<Input placeholder="Enter password" {...field} />
+											<PasswordInput placeholder="Enter password" {...field} />
 										</FormControl>
 										<FormMessage />
 									</FormItem>
