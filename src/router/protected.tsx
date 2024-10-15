@@ -14,7 +14,7 @@ export const withAuth = <P extends WrappedComponentProps>(
 	options: WithAuthOptions,
 ): FC<P> => {
 	const AuthWrapper: FC<P> = (props) => {
-		const isAuthenticated = false;
+		const isAuthenticated = true;
 		const location = useLocation();
 		if (options.isProtected && !isAuthenticated) {
 			return (
